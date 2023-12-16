@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+
+    background-color: grey;
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: 518px;
+
+}
+
+.footer_container_pages {
+    display: flex;
+    flex-direction: column;
+}
