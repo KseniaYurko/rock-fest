@@ -1,53 +1,53 @@
 import { Link } from 'react-router-dom';
 
-import VKIcon from '../../../public/logo/vkontakteIcon.svg'
-import YouTubeIcon from '../../../public/logo/youtubeIcon.svg'
-import TelegramIcon from '../../../public/logo/telegramIcon.svg'
-import ViberIcon from '../../../public/logo/viberIcon.svg'
+import logo from '../../assets/logo/OBG.svg'
+import VKIcon from '../../assets/logo/vkontakteIcon.svg'
+import YouTubeIcon from '../../assets/logo/youtubeIcon.svg'
+import TelegramIcon from '../../assets/logo/telegramIcon.svg'
+import ViberIcon from '../../assets/logo/viberIcon.svg'
 
 import styles from './style.module.css'
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <Link to="/">LOGO</Link>
-            <div className={styles.footer_container_pages}>
-                <Link to="/about">about</Link>
-                <Link to="/lineUp">lineUp</Link>
-                <Link to="/news">news</Link>
-                <Link to="/rules">rules</Link>
-                <Link to="/contacts">contacts</Link>
-                <Link to="/FAQ">FAQ</Link>
+            <Link to="/">
+                <img src={logo} alt="logo" />   
+            </Link>
+            <div className={styles.container_pages}>
+                <Link className={styles.container_pages_item} to="/about">о фестивале</Link>
+                <Link className={styles.container_pages_item} to="/lineUp">line-Up</Link>
+                <Link className={styles.container_pages_item} to="/news">новости</Link>
+                <Link className={styles.container_pages_item} to="/rules">правила фестиваля</Link>
+                <Link className={styles.container_pages_item} to="/contacts">контакты</Link>
+                <Link className={styles.container_pages_item} to="/FAQ">FAQ</Link>
             </div>
-            <div>
-                <p>Публичная офера</p>
-                <p>Оплата</p>
-                <p>Возврат билета</p>
-                <p>Сервис и поддержка</p>
-                <div className={styles.socialmedia_icons}>
+            <div className={styles.container_info}>
+                <p className={styles.container_info_item}>Публичная офера</p>
+                <p className={styles.container_info_item}>Оплата</p>
+                <p className={styles.container_info_item}>Возврат билета</p>
+                <p className={styles.container_info_item}>Сервис и поддержка</p>
+                <div className={styles.container_socialmedia}>
                     <img 
-                        style={styles.icon}
+                        // style={styles.socialmedia_icon}
                         src={VKIcon}
                         alt="VKIcon" 
                     /> 
-                    {/* <Image 
-                        style={styles.icon}
-                        source={{
-                            uri: 'https://reactnative.dev/img/tiny_logo.png',
-                          }}
-                    />
-                    <Image 
-                        style={styles.icon}
-                        source={{
-                            uri: 'https://reactnative.dev/img/tiny_logo.png',
-                          }}
-                    />
-                    <Image 
-                        style={styles.icon}
-                        source={{
-                            uri: 'https://reactnative.dev/img/tiny_logo.png',
-                          }}
-                    /> */}
+                    <img 
+                        // style={styles.socialmedia_icon}
+                        src={YouTubeIcon}
+                        alt="YouTubeIcon" 
+                    /> 
+                    <img 
+                        // style={styles.socialmedia_icon}
+                        src={TelegramIcon}
+                        alt="TelegramIcon" 
+                    /> 
+                    <img 
+                        // style={styles.socialmedia_icon}
+                        src={ViberIcon}
+                        alt="ViberIcon" 
+                    /> 
                 </div>
             </div>
 

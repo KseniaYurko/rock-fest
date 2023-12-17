@@ -1,16 +1,39 @@
 .footer {
+    padding: 25px;
+    padding-right: 207px;
     display: flex;
     align-items: center;
-
-    background-color: grey;
+    justify-content: space-around;
+    background-color: #000;
+    color: #FFF;
     gap: 10px;
-    position: absolute;
-    width: 100%;
+    /* width: 100%; */
     height: 518px;
 
 }
 
-.footer_container_pages {
+.container_pages {
+    padding-right: 207px;
+    width: 170px;
     display: flex;
     flex-direction: column;
+}
+
+.container_pages_item {
+    margin-bottom: 39px;
+    align-self: start;
+}
+
+.container_pages_item::first-letter {
+    text-transform: uppercase;
+}
+
+/* .container_info {
+} */
+
+/* .container_info_item {
+} */
+
+.socialmedia_icon {
+    background-color: chartreuse;
 }

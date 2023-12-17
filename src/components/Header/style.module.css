@@ -1,5 +1,43 @@
 .header {
+    padding: 25px;
+    min-height: 43px;
+    /* width: 100%; */
     display: flex;
+    gap: 30px;
     background-color: black;
-    gap: 10px;
+    align-items: center;
+}
+
+.container_logo {
+    margin: 3px 10px;
+    margin-right: 40px;
+}
+
+.container_pages {
+    width: 1129px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.container_pages_item { 
+    background: #4D4D4D;
+    height: 43px; 
+    padding: 15px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transform: skew(-35deg);
+}
+
+a {
+    color: white;
+    transform: skew(0deg);
+    text-decoration: none;
+    /* white-space: nowrap; */
+    font-size: 16px;
+    font-style: normal;
+
 }
