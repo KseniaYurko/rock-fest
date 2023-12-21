@@ -11,7 +11,7 @@ import styles from './style.module.css'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <Link to="/">
+            <Link className={styles.container_logo} to="/">
                 <img src={logo} alt="logo" />   
             </Link>
             <div className={styles.container_pages}>
@@ -29,22 +29,22 @@ const Footer = () => {
                 <p className={styles.container_info_item}>Сервис и поддержка</p>
                 <div className={styles.container_socialmedia}>
                     <img 
-                        // style={styles.socialmedia_icon}
+                        style={{margin: '0px 18px'}}
                         src={VKIcon}
                         alt="VKIcon" 
                     /> 
                     <img 
-                        // style={styles.socialmedia_icon}
+                        style={{margin: '0px 18px'}}
                         src={YouTubeIcon}
                         alt="YouTubeIcon" 
                     /> 
                     <img 
-                        // style={styles.socialmedia_icon}
+                        style={{margin: '0px 18px'}}
                         src={TelegramIcon}
                         alt="TelegramIcon" 
                     /> 
                     <img 
-                        // style={styles.socialmedia_icon}
+                        style={{margin: '0px 18px'}}
                         src={ViberIcon}
                         alt="ViberIcon" 
                     /> 
